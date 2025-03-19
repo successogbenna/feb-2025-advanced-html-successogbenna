@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Creation</title>
+</head>
+<!-- This is the body -->
+<body>
+    <!-- Order list Section -->
+    <h3>Order List </h3>
+    <ol type="i">
+        <li>Movies</li>
+        <li>Exercise</li>
+        <li>Reading</li>
+    </ol>
+    <hr>
+     <!-- Image section -->
+    <img src="image.png" alt="new_image" width="600px" height="400px">
+    <hr>
+     <!-- Table section  -->
+    <table border="1" style="width: 80%;">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <td>Jame Aboki</td>
+                <td>sheriff Bello Avenue Lagos</td>
+                <td>+23423456788</td>
+                <td>Ab@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Arit Efit</td>
+                <td>Jakande Street Lagos</td>
+                <td>+23423456788</td>
+                <td>arit@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Praise Smith</td>
+                <td>Love Avenue New York</td>
+                <td>+11123456788</td>
+                <td>ps@gmail.com</td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <hr>
+     <!-- Form Section -->
+    <form action=""> 
+        <fieldset>
+            <legend>Personal Data</legend>
+             <!-- Input Section , name, email, password, date -->
+            <label for="Name">Name</label>
+            <input type="text" name="Name" required  id="Name" placeholder="Enter your Full name" ><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
+            <label for="date">date</label>
+            <input type="date" name="date" id="date"><br><br>
+            <label for="select">Select Field Option</label>
+             <!-- Selection Section -->
+            <select name="select" id="select">
+                <option value="Data Science">Data Science</option>
+                <option value="Frontend">Frontend Developer</option>
+                <option value="Backend">Backend Developer</option>
+                <option value="Software" selected>Software Engineering</option>
+                <option value="Others">Others</option>
+            </select> <br><br>
+             <!-- Radio and checkboxes -->
+            <label for="">Gender</label>
+            <input type="radio" name="gender" value="male" id="male">Male
+            <input type="radio" name="gender" value="Female" id="">Female <br><br>
+            <label for="">Select your Favourity Club</label>
+            <input type="checkbox" name="club" Value="Manu" id="">Manchester United
+            <input type="checkbox" name="club" Value="Madrid" id="">Madrid
+            <input type="checkbox" name="club" Value="Milan" id="">Ac Milan
+            <input type="checkbox" name="club" Value="PSG" id="">PSG <br><br>
+            <button type="submit">Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>
